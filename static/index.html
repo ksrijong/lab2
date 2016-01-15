@@ -16,6 +16,11 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 
+	<!-- CAROUSEL. Copied from w3schools -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,53 +45,81 @@
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
-			</a>
-		</div>
-		<div class="project" id="project2">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+				<li data-target="#myCarousel" data-slide-to="6"></li>
+				<li data-target="#myCarousel" data-slide-to="7"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+
+			<div class="project item active" id="project1">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Waiting in Line</p>
+				</a>
+			</div>
+			<div class="project item" id="project2">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Needfinding</p>
+				</a>
+			</div>
+			<div class="project item" id="project3">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Prototyping</p>
+				</a>
+			</div>
+			<div class="project item" id="project4">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Heuristic Evaluation</p>
+				</a>
+			</div>
+			<div class="project item" id="project5">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Visualization</p>
+				</a>
+			</div>
+			<div class="project item" id="project6">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Social design</p>
+				</a>
+			</div>
+			<div class="project item" id="project7">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Gestural interaction</p>
+				</a>
+			</div>
+			<div class="project item" id="project8">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Design tools</p>
+				</a>
+			</div>
+
+			</div>
+
+			<!-- Left and right controls -->
+    	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      	<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      	<span class="sr-only">Next</span>
+    	</a>
+
 		</div>
 	</div>
 </body>
